@@ -1,0 +1,31 @@
+﻿@{
+    ViewData["Title"] = "Elasticsearch Demo";
+}
+@model ElasticsearchResults
+@using Newtonsoft.Json
+
+<style>
+    pre{
+        white-space:pre-wrap;
+    }
+</style>
+
+<h1>Create</h1>
+<pre>
+    @Model.CreateDebug
+</pre>
+
+<h1>Index</h2>
+<pre>
+    @Model.IndexDebug
+</pre>
+
+<h1>Query</h1>
+<pre>
+    @Model.QueryDebug
+</pre>
+
+<h1>Results</h1>
+<pre>
+    @Html.Raw(JsonConvert.SerializeObject(@Model.BoardGames, Formatting.Indented))
+</pre>

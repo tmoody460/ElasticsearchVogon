@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Vogon Poetry Reading";
+}
+<div style="text-align: center;">
+    <h3>Demo #1</h3>
+
+    @Html.ActionLink("Simple Demo", "DemoOne", "home")
+
+    <h3>Demo #2</h3>
+
+    @Html.ActionLink("Simple Match", "DemoTwoSimpleMatch", "home")
+    <br />
+    @Html.ActionLink("Multi-Match", "DemoTwoMultiMatch", "home")
+    <br />
+    @Html.ActionLink("Structured Match", "DemoTwoStructured", "home")
+
+
+    <h3>Demo #3</h3>
+
+    @Html.ActionLink("Bucket Aggregation", "DemoThreeBuckets", "home")
+    <br />
+    @Html.ActionLink("Metric Aggregation", "DemoThreeMetric", "home")
+</div>
